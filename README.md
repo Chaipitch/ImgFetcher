@@ -1,2 +1,1 @@
-# ImgFetcher
-Fetching images from API
+EXERCISE ON FETCHING APIS

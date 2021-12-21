@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: rgb(109, 23, 179);
+  background: linear-gradient(
+    0deg,
+    rgba(109, 23, 179, 1) 0%,
+    rgb(170, 230, 231) 100%
+  );
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+#logo {
+  text-decoration: none;
+  color: black;
+}
+
+.search-form {
+  padding: 2rem;
+  display: flex;
+}
+
+.search-form input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  background: rgb(231, 255, 255);
+  width: 100%;
+  border: none;
+  border: 2px solid rgb(71, 189, 189);
+  border-radius: 15px;
+}
+
+.search-form button {
+  margin-left: 15px;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: rgb(13, 24, 73);
+  color: white;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background: rgb(96, 115, 196);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 2em;
+  width: 80%;
+  margin: auto;
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: grey;
+  padding: 0.5rem 0rem;
+}
+
+.gallery-info a {
+  color: grey;
+}
+
+.nav-button {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more {
+  padding: 1rem 3rem;
+  background: rgb(56, 190, 192);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.more:hover {
+  background: rgb(61, 84, 211);
+}
+
+footer {
+  color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 1em;
+    width: 80%;
+    margin: 0;
+    row-gap: 5rem;
+    column-gap: 3rem;
+  }
+
+  .gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
